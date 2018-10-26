@@ -10,7 +10,9 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <xmlFile></xmlFile>
     </properties>
+
 
     <build>
         <plugins>
@@ -47,7 +49,7 @@
         <configuration>
             <testFailureIgnore>true</testFailureIgnore>
             <suiteXmlFiles>
-                <file>xml/testng.xml</file>
+                <file>${xmlFile}</file>
             </suiteXmlFiles>
             <!--<workingDirectory>target/</workingDirectory>-->
         </configuration>
