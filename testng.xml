@@ -7,10 +7,10 @@
         <classes>
             <class name="com.hht.test.Test">
                 <methods>
-                    <!--<include name="减法" />-->
-                    <!--<include name="加法" />-->
-                    <!--<include name="乘法" />-->
-                    <include name="testa" ></include>
+                    <include name="减法" />
+                    <include name="加法" />
+                    <include name="乘法" />
+                    <!--<include name="testa" ></include>-->
                 </methods>
             </class>
         </classes>

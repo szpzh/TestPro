@@ -23,7 +23,7 @@ public class Test {
         DesiredCapabilities cap = new DesiredCapabilities();
         cap.setCapability(CapabilityType.BROWSER_NAME, "");
         cap.setCapability("platformName", "Android"); //指定测试平台
-        cap.setCapability("deviceName", "192.168.67.64:5555"); //指定测试机的ID,通过adb命令`adb devices`获取
+        cap.setCapability("deviceName", "192.168.67.57:5555"); //指定测试机的ID,通过adb命令`adb devices`获取
         cap.setCapability("platformVersion", "6.0");
 
         //将上面获取到的包名和Activity名设置为值
@@ -42,11 +42,6 @@ public class Test {
         cap.setCapability("sessionOverride", true);
 
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), cap);
-    }
-
-    @org.testng.annotations.Test
-    public void testa(){
-        driver.findElementByXPath("//android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.widget.RelativeLayout[1]/android.widget.LinearLayout[1]/android.widget.ImageView[3]").click();
     }
 
     @org.testng.annotations.Test
