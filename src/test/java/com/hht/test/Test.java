@@ -27,16 +27,16 @@ public class Test {
         cap.setCapability("platformVersion", "6.0");
 
         //将上面获取到的包名和Activity名设置为值
-//        cap.setCapability("appPackage", "com.android.calculator2");
-//        cap.setCapability("appActivity", "com.android.calculator2.Calculator");
-//        //A new session could not be created的解决方法
-//        cap.setCapability("appWaitActivity","com.android.calculator2.Calculator");
-
-        cap.setCapability("appPackage", "com.android.hht.whiteboard");
-        cap.setCapability("appActivity", "com.android.hht.whiteboard.MainActivity");
-
+        cap.setCapability("appPackage", "com.android.calculator2");
+        cap.setCapability("appActivity", "com.android.calculator2.Calculator");
         //A new session could not be created的解决方法
-        cap.setCapability("appWaitActivity","com.android.hht.whiteboard.MainActivity");
+        cap.setCapability("appWaitActivity","com.android.calculator2.Calculator");
+
+//        cap.setCapability("appPackage", "com.android.hht.whiteboard");
+//        cap.setCapability("appActivity", "com.android.hht.whiteboard.MainActivity");
+//
+//        //A new session could not be created的解决方法
+//        cap.setCapability("appWaitActivity","com.android.hht.whiteboard.MainActivity");
 
         //每次启动时覆盖session，否则第二次后运行会报错不能新建session
         cap.setCapability("sessionOverride", true);
@@ -45,7 +45,7 @@ public class Test {
     }
 
     @org.testng.annotations.Test
-    public void 加法(){
+    public void add(){
 //      //获取1
         driver.findElementById("com.android.calculator2:id/digit_9").click();
 //      //获取+
@@ -58,7 +58,7 @@ public class Test {
     }
 
     @org.testng.annotations.Test
-    public void 减法(){
+    public void reduce(){
 //      //获取1
         driver.findElementById("com.android.calculator2:id/digit_9").click();
 //      //获取-
@@ -70,7 +70,7 @@ public class Test {
     }
 
     @org.testng.annotations.Test
-    public void 乘法(){
+    public void mul(){
 //      //获取1
         driver.findElementById("com.android.calculator2:id/digit_9").click();
 //      //获取x

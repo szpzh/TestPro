@@ -7,9 +7,9 @@
         <classes>
             <class name="com.hht.test.Test">
                 <methods>
-                    <include name="减法" />
-                    <include name="加法" />
-                    <include name="乘法" />
+                    <include name="reduce" />
+                    <include name="add" />
+                    <include name="mul" />
                     <!--<include name="testa" ></include>-->
                 </methods>
             </class>
